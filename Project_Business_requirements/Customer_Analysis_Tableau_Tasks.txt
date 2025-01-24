@@ -1,0 +1,167 @@
+Here are **25+ business problems or requirements for Tableau** along with **micro steps** to guide you through creating effective visualizations, ranging from basic to advanced:
+
+---
+
+### **Customer Demographics and Segmentation**
+1. **Age Distribution of Customers**  
+   - Micro Steps:  
+     1. Drag `Age` to Columns.  
+     2. Drag `Customer ID` to Rows and change it to Count (Measure).  
+     3. Use a bar chart to visualize.  
+     4. Add filters to show specific age ranges if needed.
+
+2. **Gender Breakdown of Customers**  
+   - Micro Steps:  
+     1. Drag `Gender` to Rows.  
+     2. Drag `Customer ID` to Columns and change it to Count.  
+     3. Use a pie chart or bar chart for better visualization.
+
+3. **Top Locations by Customer Count**  
+   - Micro Steps:  
+     1. Drag `Location` to Rows.  
+     2. Drag `Customer ID` to Columns and change it to Count.  
+     3. Sort by descending to see top locations.  
+     4. Use a horizontal bar chart.
+
+---
+
+### **Sales Performance**
+4. **Total Sales by Category**  
+   - Micro Steps:  
+     1. Drag `Category` to Rows.  
+     2. Drag `Purchase Amount (USD)` to Columns and change it to SUM.  
+     3. Use a stacked bar chart for better insights.
+
+5. **Monthly Sales Trend**  
+   - Micro Steps:  
+     1. Create a calculated field for Month (e.g., DATEPART('month', [Order Date])).  
+     2. Drag the calculated field to Columns.  
+     3. Drag `Purchase Amount (USD)` to Rows and use SUM.  
+     4. Use a line chart to show trends.
+
+6. **Highest Revenue-Generating Products**  
+   - Micro Steps:  
+     1. Drag `Item Purchased` to Rows.  
+     2. Drag `Purchase Amount (USD)` to Columns and change it to SUM.  
+     3. Sort by descending.  
+     4. Use a bar chart to visualize.
+
+---
+
+### **Customer Behavior**
+7. **Purchase Frequency by Age Group**  
+   - Micro Steps:  
+     1. Create a calculated field for Age Group (e.g., `IF Age < 30 THEN 'Under 30' ELSEIF Age < 50 THEN '30-50' ELSE 'Above 50' END`).  
+     2. Drag this field to Rows.  
+     3. Drag `Frequency of Purchases` to Columns and use COUNT.  
+     4. Use a bar chart for visualization.
+
+8. **Review Rating Analysis**  
+   - Micro Steps:  
+     1. Drag `Review Rating` to Rows.  
+     2. Drag `Customer ID` to Columns and use Count.  
+     3. Use a scatter plot to analyze distribution.
+
+---
+
+### **Shipping Insights**
+9. **Shipping Types by Region**  
+   - Micro Steps:  
+     1. Drag `Shipping Type` to Rows.  
+     2. Drag `Location` to Columns.  
+     3. Drag `Customer ID` to the Details shelf.  
+     4. Use a heat map to visualize concentration.
+
+10. **Effect of Shipping Type on Review Ratings**  
+   - Micro Steps:  
+     1. Drag `Shipping Type` to Rows.  
+     2. Drag `Review Rating` to Columns and use AVG.  
+     3. Use a bar chart to display averages.
+
+---
+
+### **Discounts and Promotions**
+11. **Revenue Comparison: Discount Applied vs. Not Applied**  
+   - Micro Steps:  
+     1. Drag `Discount Applied` to Rows.  
+     2. Drag `Purchase Amount (USD)` to Columns and use SUM.  
+     3. Use a bar chart to compare.
+
+12. **Promo Code Usage by Season**  
+   - Micro Steps:  
+     1. Drag `Promo Code Used` to Columns.  
+     2. Drag `Season` to Rows.  
+     3. Drag `Customer ID` to Size or Color for emphasis.  
+     4. Use a tree map for visualization.
+
+---
+
+### **Payment Insights**
+13. **Revenue by Payment Method**  
+   - Micro Steps:  
+     1. Drag `Payment Method` to Rows.  
+     2. Drag `Purchase Amount (USD)` to Columns and use SUM.  
+     3. Use a pie chart for an overview.
+
+14. **Preferred Payment Methods by Age Group**  
+   - Micro Steps:  
+     1. Use the calculated field for Age Group.  
+     2. Drag `Payment Method` to Rows.  
+     3. Drag `Customer ID` to Columns and change it to Count.  
+     4. Use a stacked bar chart to show distributions.
+
+---
+
+### **Seasonal Trends**
+15. **Seasonal Sales Performance**  
+   - Micro Steps:  
+     1. Drag `Season` to Columns.  
+     2. Drag `Purchase Amount (USD)` to Rows and use SUM.  
+     3. Use a line chart for trend visualization.
+
+16. **Popular Items by Season**  
+   - Micro Steps:  
+     1. Drag `Season` to Columns.  
+     2. Drag `Item Purchased` to Rows.  
+     3. Drag `Customer ID` to Size or Details shelf.  
+     4. Use a tree map or bar chart.
+
+---
+
+### **Advanced Visualizations**
+17. **Customer Segmentation by Review Ratings and Purchase Amount**  
+   - Micro Steps:  
+     1. Drag `Review Rating` to Columns.  
+     2. Drag `Purchase Amount (USD)` to Rows.  
+     3. Use a scatter plot with `Customer ID` as Details.
+
+18. **Geographic Analysis of Sales**  
+   - Micro Steps:  
+     1. Drag `Location` to Columns.  
+     2. Drag `Purchase Amount (USD)` to Size and Color.  
+     3. Use a filled map visualization.
+
+19. **Discount Effectiveness Analysis**  
+   - Micro Steps:  
+     1. Drag `Discount Applied` to Rows.  
+     2. Drag `Review Rating` to Columns and use AVG.  
+     3. Use a dual-axis chart to compare with `Purchase Amount (USD)`.
+
+---
+
+### **Highly Advanced Visualizations**
+20. **Churn Analysis Based on Subscription Status**  
+   - Micro Steps:  
+     1. Create a calculated field for Churn (e.g., `IF [Subscription Status] = 'No' THEN 1 ELSE 0 END`).  
+     2. Drag this field to Columns.  
+     3. Use bar charts to compare churn rates across categories.
+
+21. **Customer Lifetime Value (CLV) Analysis**  
+   - Micro Steps:  
+     1. Calculate CLV (`SUM([Purchase Amount (USD)] * [Frequency of Purchases])`).  
+     2. Drag this calculated field to Rows.  
+     3. Use heat maps to visualize high-value customers.
+
+---
+
+These business problems progress from basic to highly advanced, helping you build proficiency in Tableau. Let me know if you’d like to explore any specific visualization or business problem further!
