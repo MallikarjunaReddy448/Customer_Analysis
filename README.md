@@ -2,6 +2,8 @@
 **
 This project focuses on analyzing customer behavior, product performance, and sales trends to derive actionable insights for enhancing business strategies. Using SQL for data extraction and analysis, and Tableau for creating interactive dashboards, the project provides a comprehensive view of customer shopping patterns and sales performance.
 
+Dashboard: 👉 [Explore the Retail Supply Chain Sales Dashboard here](https://public.tableau.com/app/profile/mallikarjuna.reddy.gurrala/viz/CustomerBehaviorSalesAnalysisDashboard/SalesPerformance)
+
 Key Features:
 SQL Analysis:
 
